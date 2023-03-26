@@ -28,60 +28,65 @@ Partial Class Form1
         Me.lbladdress = New System.Windows.Forms.Label()
         Me.bgdetails = New System.Windows.Forms.Panel()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtcreditcard = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.chkdelivery = New System.Windows.Forms.CheckBox()
         Me.txtaddress = New System.Windows.Forms.TextBox()
         Me.txtphone = New System.Windows.Forms.TextBox()
         Me.lblphone = New System.Windows.Forms.Label()
         Me.txtname = New System.Windows.Forms.TextBox()
+        Me.PANELEXTENDER = New System.Windows.Forms.Label()
         Me.lblregular = New System.Windows.Forms.Label()
         Me.bgregular = New System.Windows.Forms.Panel()
-        Me.NumericUpDown7 = New System.Windows.Forms.NumericUpDown()
+        Me.nmudveggie = New System.Windows.Forms.NumericUpDown()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
+        Me.nmudmargherita = New System.Windows.Forms.NumericUpDown()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.NumericUpDown5 = New System.Windows.Forms.NumericUpDown()
+        Me.nmudmhawaiian = New System.Windows.Forms.NumericUpDown()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.NumericUpDown6 = New System.Windows.Forms.NumericUpDown()
+        Me.nmudmeatlovers = New System.Windows.Forms.NumericUpDown()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
+        Me.nmudham = New System.Windows.Forms.NumericUpDown()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
+        Me.nmudcheese = New System.Windows.Forms.NumericUpDown()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.nmudpepperoni = New System.Windows.Forms.NumericUpDown()
         Me.lblpepperoni = New System.Windows.Forms.Label()
         Me.lblgourmet = New System.Windows.Forms.Label()
         Me.bggourmet = New System.Windows.Forms.Panel()
-        Me.NumericUpDown8 = New System.Windows.Forms.NumericUpDown()
+        Me.numdamericano = New System.Windows.Forms.NumericUpDown()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.NumericUpDown9 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown12 = New System.Windows.Forms.NumericUpDown()
+        Me.nmudbeefonion = New System.Windows.Forms.NumericUpDown()
+        Me.nmudnewyorker = New System.Windows.Forms.NumericUpDown()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.NumericUpDown10 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown11 = New System.Windows.Forms.NumericUpDown()
+        Me.nmudloadedbbq = New System.Windows.Forms.NumericUpDown()
+        Me.nmudsupreme = New System.Windows.Forms.NumericUpDown()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label14 = New System.Windows.Forms.Label()
+        Me.btnrevieworder = New System.Windows.Forms.Button()
+        Me.btnreset = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ChangePasswordToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenPasswordTXTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.bgdetails.SuspendLayout()
         Me.bgregular.SuspendLayout()
-        CType(Me.NumericUpDown7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmudveggie, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmudmargherita, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmudmhawaiian, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmudmeatlovers, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmudham, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmudcheese, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmudpepperoni, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.bggourmet.SuspendLayout()
-        CType(Me.NumericUpDown8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.numdamericano, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmudbeefonion, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmudnewyorker, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmudloadedbbq, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmudsupreme, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'lbldetails
@@ -89,7 +94,7 @@ Partial Class Form1
         Me.lbldetails.AutoSize = True
         Me.lbldetails.BackColor = System.Drawing.Color.White
         Me.lbldetails.Font = New System.Drawing.Font("Century Gothic", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
-        Me.lbldetails.Location = New System.Drawing.Point(19, 17)
+        Me.lbldetails.Location = New System.Drawing.Point(19, 33)
         Me.lbldetails.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lbldetails.Name = "lbldetails"
         Me.lbldetails.Size = New System.Drawing.Size(300, 42)
@@ -101,7 +106,7 @@ Partial Class Form1
         Me.lblname.AutoSize = True
         Me.lblname.BackColor = System.Drawing.Color.White
         Me.lblname.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblname.Location = New System.Drawing.Point(23, 90)
+        Me.lblname.Location = New System.Drawing.Point(23, 122)
         Me.lblname.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblname.Name = "lblname"
         Me.lblname.Size = New System.Drawing.Size(94, 30)
@@ -113,7 +118,7 @@ Partial Class Form1
         Me.lbldelivery.AutoSize = True
         Me.lbldelivery.BackColor = System.Drawing.Color.White
         Me.lbldelivery.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lbldelivery.Location = New System.Drawing.Point(12, 165)
+        Me.lbldelivery.Location = New System.Drawing.Point(12, 181)
         Me.lbldelivery.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lbldelivery.Name = "lbldelivery"
         Me.lbldelivery.Size = New System.Drawing.Size(124, 30)
@@ -125,7 +130,7 @@ Partial Class Form1
         Me.lbladdress.AutoSize = True
         Me.lbladdress.BackColor = System.Drawing.Color.White
         Me.lbladdress.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lbladdress.Location = New System.Drawing.Point(23, 218)
+        Me.lbladdress.Location = New System.Drawing.Point(23, 251)
         Me.lbladdress.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lbladdress.Name = "lbladdress"
         Me.lbladdress.Size = New System.Drawing.Size(112, 30)
@@ -135,9 +140,8 @@ Partial Class Form1
         'bgdetails
         '
         Me.bgdetails.BackColor = System.Drawing.Color.White
-        Me.bgdetails.Controls.Add(Me.Label14)
         Me.bgdetails.Controls.Add(Me.Label13)
-        Me.bgdetails.Controls.Add(Me.TextBox2)
+        Me.bgdetails.Controls.Add(Me.txtcreditcard)
         Me.bgdetails.Controls.Add(Me.Label12)
         Me.bgdetails.Controls.Add(Me.chkdelivery)
         Me.bgdetails.Controls.Add(Me.txtaddress)
@@ -145,9 +149,10 @@ Partial Class Form1
         Me.bgdetails.Controls.Add(Me.txtphone)
         Me.bgdetails.Controls.Add(Me.lblphone)
         Me.bgdetails.Controls.Add(Me.txtname)
-        Me.bgdetails.Location = New System.Drawing.Point(11, 12)
+        Me.bgdetails.Controls.Add(Me.PANELEXTENDER)
+        Me.bgdetails.Location = New System.Drawing.Point(11, 27)
         Me.bgdetails.Name = "bgdetails"
-        Me.bgdetails.Size = New System.Drawing.Size(474, 344)
+        Me.bgdetails.Size = New System.Drawing.Size(474, 322)
         Me.bgdetails.TabIndex = 5
         '
         'Label13
@@ -155,19 +160,19 @@ Partial Class Form1
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.White
         Me.Label13.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label13.Location = New System.Drawing.Point(12, 246)
+        Me.Label13.Location = New System.Drawing.Point(12, 262)
         Me.Label13.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(159, 30)
         Me.Label13.TabIndex = 15
         Me.Label13.Text = "Credit Card:"
         '
-        'TextBox2
+        'txtcreditcard
         '
-        Me.TextBox2.Location = New System.Drawing.Point(232, 246)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(224, 31)
-        Me.TextBox2.TabIndex = 14
+        Me.txtcreditcard.Location = New System.Drawing.Point(232, 262)
+        Me.txtcreditcard.Name = "txtcreditcard"
+        Me.txtcreditcard.Size = New System.Drawing.Size(224, 31)
+        Me.txtcreditcard.TabIndex = 14
         '
         'Label12
         '
@@ -183,7 +188,7 @@ Partial Class Form1
         'chkdelivery
         '
         Me.chkdelivery.AutoSize = True
-        Me.chkdelivery.Location = New System.Drawing.Point(232, 168)
+        Me.chkdelivery.Location = New System.Drawing.Point(232, 184)
         Me.chkdelivery.Name = "chkdelivery"
         Me.chkdelivery.Size = New System.Drawing.Size(51, 26)
         Me.chkdelivery.TabIndex = 4
@@ -192,14 +197,14 @@ Partial Class Form1
         '
         'txtaddress
         '
-        Me.txtaddress.Location = New System.Drawing.Point(232, 206)
+        Me.txtaddress.Location = New System.Drawing.Point(232, 222)
         Me.txtaddress.Name = "txtaddress"
         Me.txtaddress.Size = New System.Drawing.Size(224, 31)
         Me.txtaddress.TabIndex = 3
         '
         'txtphone
         '
-        Me.txtphone.Location = New System.Drawing.Point(232, 124)
+        Me.txtphone.Location = New System.Drawing.Point(232, 140)
         Me.txtphone.Name = "txtphone"
         Me.txtphone.Size = New System.Drawing.Size(224, 31)
         Me.txtphone.TabIndex = 1
@@ -209,7 +214,7 @@ Partial Class Form1
         Me.lblphone.AutoSize = True
         Me.lblphone.BackColor = System.Drawing.Color.White
         Me.lblphone.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblphone.Location = New System.Drawing.Point(12, 125)
+        Me.lblphone.Location = New System.Drawing.Point(12, 141)
         Me.lblphone.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblphone.Name = "lblphone"
         Me.lblphone.Size = New System.Drawing.Size(199, 30)
@@ -218,17 +223,30 @@ Partial Class Form1
         '
         'txtname
         '
-        Me.txtname.Location = New System.Drawing.Point(232, 82)
+        Me.txtname.Location = New System.Drawing.Point(232, 98)
         Me.txtname.Name = "txtname"
         Me.txtname.Size = New System.Drawing.Size(224, 31)
         Me.txtname.TabIndex = 0
+        '
+        'PANELEXTENDER
+        '
+        Me.PANELEXTENDER.AutoSize = True
+        Me.PANELEXTENDER.BackColor = System.Drawing.Color.White
+        Me.PANELEXTENDER.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.PANELEXTENDER.ForeColor = System.Drawing.Color.White
+        Me.PANELEXTENDER.Location = New System.Drawing.Point(12, 283)
+        Me.PANELEXTENDER.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.PANELEXTENDER.Name = "PANELEXTENDER"
+        Me.PANELEXTENDER.Size = New System.Drawing.Size(159, 30)
+        Me.PANELEXTENDER.TabIndex = 16
+        Me.PANELEXTENDER.Text = "Credit Card:"
         '
         'lblregular
         '
         Me.lblregular.AutoSize = True
         Me.lblregular.BackColor = System.Drawing.Color.White
         Me.lblregular.Font = New System.Drawing.Font("Century Gothic", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
-        Me.lblregular.Location = New System.Drawing.Point(498, 18)
+        Me.lblregular.Location = New System.Drawing.Point(6, 6)
         Me.lblregular.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblregular.Name = "lblregular"
         Me.lblregular.Size = New System.Drawing.Size(365, 42)
@@ -238,33 +256,34 @@ Partial Class Form1
         'bgregular
         '
         Me.bgregular.BackColor = System.Drawing.Color.White
-        Me.bgregular.Controls.Add(Me.NumericUpDown7)
+        Me.bgregular.Controls.Add(Me.nmudveggie)
         Me.bgregular.Controls.Add(Me.Label6)
-        Me.bgregular.Controls.Add(Me.NumericUpDown4)
+        Me.bgregular.Controls.Add(Me.nmudmargherita)
         Me.bgregular.Controls.Add(Me.Label3)
-        Me.bgregular.Controls.Add(Me.NumericUpDown5)
+        Me.bgregular.Controls.Add(Me.nmudmhawaiian)
+        Me.bgregular.Controls.Add(Me.lblregular)
         Me.bgregular.Controls.Add(Me.Label4)
-        Me.bgregular.Controls.Add(Me.NumericUpDown6)
+        Me.bgregular.Controls.Add(Me.nmudmeatlovers)
         Me.bgregular.Controls.Add(Me.Label5)
-        Me.bgregular.Controls.Add(Me.NumericUpDown3)
+        Me.bgregular.Controls.Add(Me.nmudham)
         Me.bgregular.Controls.Add(Me.Label2)
-        Me.bgregular.Controls.Add(Me.NumericUpDown2)
+        Me.bgregular.Controls.Add(Me.nmudcheese)
         Me.bgregular.Controls.Add(Me.Label1)
-        Me.bgregular.Controls.Add(Me.NumericUpDown1)
+        Me.bgregular.Controls.Add(Me.nmudpepperoni)
         Me.bgregular.Controls.Add(Me.lblpepperoni)
-        Me.bgregular.Location = New System.Drawing.Point(493, 12)
+        Me.bgregular.Location = New System.Drawing.Point(493, 27)
         Me.bgregular.Name = "bgregular"
-        Me.bgregular.Size = New System.Drawing.Size(474, 265)
+        Me.bgregular.Size = New System.Drawing.Size(474, 250)
         Me.bgregular.TabIndex = 6
         '
-        'NumericUpDown7
+        'nmudveggie
         '
-        Me.NumericUpDown7.Location = New System.Drawing.Point(166, 206)
-        Me.NumericUpDown7.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.NumericUpDown7.Name = "NumericUpDown7"
-        Me.NumericUpDown7.ReadOnly = True
-        Me.NumericUpDown7.Size = New System.Drawing.Size(58, 31)
-        Me.NumericUpDown7.TabIndex = 22
+        Me.nmudveggie.Location = New System.Drawing.Point(166, 206)
+        Me.nmudveggie.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.nmudveggie.Name = "nmudveggie"
+        Me.nmudveggie.ReadOnly = True
+        Me.nmudveggie.Size = New System.Drawing.Size(58, 31)
+        Me.nmudveggie.TabIndex = 22
         '
         'Label6
         '
@@ -278,14 +297,14 @@ Partial Class Form1
         Me.Label6.TabIndex = 21
         Me.Label6.Text = "Veggie"
         '
-        'NumericUpDown4
+        'nmudmargherita
         '
-        Me.NumericUpDown4.Location = New System.Drawing.Point(395, 164)
-        Me.NumericUpDown4.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.NumericUpDown4.Name = "NumericUpDown4"
-        Me.NumericUpDown4.ReadOnly = True
-        Me.NumericUpDown4.Size = New System.Drawing.Size(58, 31)
-        Me.NumericUpDown4.TabIndex = 20
+        Me.nmudmargherita.Location = New System.Drawing.Point(395, 164)
+        Me.nmudmargherita.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.nmudmargherita.Name = "nmudmargherita"
+        Me.nmudmargherita.ReadOnly = True
+        Me.nmudmargherita.Size = New System.Drawing.Size(58, 31)
+        Me.nmudmargherita.TabIndex = 20
         '
         'Label3
         '
@@ -299,14 +318,14 @@ Partial Class Form1
         Me.Label3.TabIndex = 19
         Me.Label3.Text = "Margherita"
         '
-        'NumericUpDown5
+        'nmudmhawaiian
         '
-        Me.NumericUpDown5.Location = New System.Drawing.Point(395, 121)
-        Me.NumericUpDown5.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.NumericUpDown5.Name = "NumericUpDown5"
-        Me.NumericUpDown5.ReadOnly = True
-        Me.NumericUpDown5.Size = New System.Drawing.Size(58, 31)
-        Me.NumericUpDown5.TabIndex = 18
+        Me.nmudmhawaiian.Location = New System.Drawing.Point(395, 121)
+        Me.nmudmhawaiian.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.nmudmhawaiian.Name = "nmudmhawaiian"
+        Me.nmudmhawaiian.ReadOnly = True
+        Me.nmudmhawaiian.Size = New System.Drawing.Size(58, 31)
+        Me.nmudmhawaiian.TabIndex = 18
         '
         'Label4
         '
@@ -320,14 +339,14 @@ Partial Class Form1
         Me.Label4.TabIndex = 17
         Me.Label4.Text = "Hawaiian"
         '
-        'NumericUpDown6
+        'nmudmeatlovers
         '
-        Me.NumericUpDown6.Location = New System.Drawing.Point(395, 79)
-        Me.NumericUpDown6.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.NumericUpDown6.Name = "NumericUpDown6"
-        Me.NumericUpDown6.ReadOnly = True
-        Me.NumericUpDown6.Size = New System.Drawing.Size(58, 31)
-        Me.NumericUpDown6.TabIndex = 16
+        Me.nmudmeatlovers.Location = New System.Drawing.Point(395, 79)
+        Me.nmudmeatlovers.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.nmudmeatlovers.Name = "nmudmeatlovers"
+        Me.nmudmeatlovers.ReadOnly = True
+        Me.nmudmeatlovers.Size = New System.Drawing.Size(58, 31)
+        Me.nmudmeatlovers.TabIndex = 16
         '
         'Label5
         '
@@ -341,14 +360,14 @@ Partial Class Form1
         Me.Label5.TabIndex = 15
         Me.Label5.Text = "Meatlovers"
         '
-        'NumericUpDown3
+        'nmudham
         '
-        Me.NumericUpDown3.Location = New System.Drawing.Point(166, 164)
-        Me.NumericUpDown3.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.NumericUpDown3.Name = "NumericUpDown3"
-        Me.NumericUpDown3.ReadOnly = True
-        Me.NumericUpDown3.Size = New System.Drawing.Size(58, 31)
-        Me.NumericUpDown3.TabIndex = 14
+        Me.nmudham.Location = New System.Drawing.Point(166, 164)
+        Me.nmudham.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.nmudham.Name = "nmudham"
+        Me.nmudham.ReadOnly = True
+        Me.nmudham.Size = New System.Drawing.Size(58, 31)
+        Me.nmudham.TabIndex = 14
         '
         'Label2
         '
@@ -362,14 +381,14 @@ Partial Class Form1
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "Ham"
         '
-        'NumericUpDown2
+        'nmudcheese
         '
-        Me.NumericUpDown2.Location = New System.Drawing.Point(166, 121)
-        Me.NumericUpDown2.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.ReadOnly = True
-        Me.NumericUpDown2.Size = New System.Drawing.Size(58, 31)
-        Me.NumericUpDown2.TabIndex = 12
+        Me.nmudcheese.Location = New System.Drawing.Point(166, 121)
+        Me.nmudcheese.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.nmudcheese.Name = "nmudcheese"
+        Me.nmudcheese.ReadOnly = True
+        Me.nmudcheese.Size = New System.Drawing.Size(58, 31)
+        Me.nmudcheese.TabIndex = 12
         '
         'Label1
         '
@@ -383,14 +402,14 @@ Partial Class Form1
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "Cheese"
         '
-        'NumericUpDown1
+        'nmudpepperoni
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(166, 79)
-        Me.NumericUpDown1.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.ReadOnly = True
-        Me.NumericUpDown1.Size = New System.Drawing.Size(58, 31)
-        Me.NumericUpDown1.TabIndex = 10
+        Me.nmudpepperoni.Location = New System.Drawing.Point(166, 79)
+        Me.nmudpepperoni.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.nmudpepperoni.Name = "nmudpepperoni"
+        Me.nmudpepperoni.ReadOnly = True
+        Me.nmudpepperoni.Size = New System.Drawing.Size(58, 31)
+        Me.nmudpepperoni.TabIndex = 10
         '
         'lblpepperoni
         '
@@ -419,29 +438,29 @@ Partial Class Form1
         'bggourmet
         '
         Me.bggourmet.BackColor = System.Drawing.Color.White
-        Me.bggourmet.Controls.Add(Me.NumericUpDown8)
+        Me.bggourmet.Controls.Add(Me.numdamericano)
         Me.bggourmet.Controls.Add(Me.Label8)
         Me.bggourmet.Controls.Add(Me.Label7)
         Me.bggourmet.Controls.Add(Me.Label11)
-        Me.bggourmet.Controls.Add(Me.NumericUpDown9)
-        Me.bggourmet.Controls.Add(Me.NumericUpDown12)
+        Me.bggourmet.Controls.Add(Me.nmudbeefonion)
+        Me.bggourmet.Controls.Add(Me.nmudnewyorker)
         Me.bggourmet.Controls.Add(Me.Label10)
-        Me.bggourmet.Controls.Add(Me.NumericUpDown10)
-        Me.bggourmet.Controls.Add(Me.NumericUpDown11)
+        Me.bggourmet.Controls.Add(Me.nmudloadedbbq)
+        Me.bggourmet.Controls.Add(Me.nmudsupreme)
         Me.bggourmet.Controls.Add(Me.Label9)
         Me.bggourmet.Location = New System.Drawing.Point(493, 283)
         Me.bggourmet.Name = "bggourmet"
         Me.bggourmet.Size = New System.Drawing.Size(474, 246)
         Me.bggourmet.TabIndex = 8
         '
-        'NumericUpDown8
+        'numdamericano
         '
-        Me.NumericUpDown8.Location = New System.Drawing.Point(395, 118)
-        Me.NumericUpDown8.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.NumericUpDown8.Name = "NumericUpDown8"
-        Me.NumericUpDown8.ReadOnly = True
-        Me.NumericUpDown8.Size = New System.Drawing.Size(58, 31)
-        Me.NumericUpDown8.TabIndex = 32
+        Me.numdamericano.Location = New System.Drawing.Point(395, 118)
+        Me.numdamericano.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.numdamericano.Name = "numdamericano"
+        Me.numdamericano.ReadOnly = True
+        Me.numdamericano.Size = New System.Drawing.Size(58, 31)
+        Me.numdamericano.TabIndex = 32
         '
         'Label8
         '
@@ -479,23 +498,23 @@ Partial Class Form1
         Me.Label11.TabIndex = 23
         Me.Label11.Text = "New Yorker"
         '
-        'NumericUpDown9
+        'nmudbeefonion
         '
-        Me.NumericUpDown9.Location = New System.Drawing.Point(395, 76)
-        Me.NumericUpDown9.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.NumericUpDown9.Name = "NumericUpDown9"
-        Me.NumericUpDown9.ReadOnly = True
-        Me.NumericUpDown9.Size = New System.Drawing.Size(58, 31)
-        Me.NumericUpDown9.TabIndex = 30
+        Me.nmudbeefonion.Location = New System.Drawing.Point(395, 76)
+        Me.nmudbeefonion.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.nmudbeefonion.Name = "nmudbeefonion"
+        Me.nmudbeefonion.ReadOnly = True
+        Me.nmudbeefonion.Size = New System.Drawing.Size(58, 31)
+        Me.nmudbeefonion.TabIndex = 30
         '
-        'NumericUpDown12
+        'nmudnewyorker
         '
-        Me.NumericUpDown12.Location = New System.Drawing.Point(166, 76)
-        Me.NumericUpDown12.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.NumericUpDown12.Name = "NumericUpDown12"
-        Me.NumericUpDown12.ReadOnly = True
-        Me.NumericUpDown12.Size = New System.Drawing.Size(58, 31)
-        Me.NumericUpDown12.TabIndex = 24
+        Me.nmudnewyorker.Location = New System.Drawing.Point(166, 76)
+        Me.nmudnewyorker.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.nmudnewyorker.Name = "nmudnewyorker"
+        Me.nmudnewyorker.ReadOnly = True
+        Me.nmudnewyorker.Size = New System.Drawing.Size(58, 31)
+        Me.nmudnewyorker.TabIndex = 24
         '
         'Label10
         '
@@ -509,23 +528,23 @@ Partial Class Form1
         Me.Label10.TabIndex = 25
         Me.Label10.Text = "Supreme"
         '
-        'NumericUpDown10
+        'nmudloadedbbq
         '
-        Me.NumericUpDown10.Location = New System.Drawing.Point(166, 161)
-        Me.NumericUpDown10.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.NumericUpDown10.Name = "NumericUpDown10"
-        Me.NumericUpDown10.ReadOnly = True
-        Me.NumericUpDown10.Size = New System.Drawing.Size(58, 31)
-        Me.NumericUpDown10.TabIndex = 28
+        Me.nmudloadedbbq.Location = New System.Drawing.Point(166, 161)
+        Me.nmudloadedbbq.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.nmudloadedbbq.Name = "nmudloadedbbq"
+        Me.nmudloadedbbq.ReadOnly = True
+        Me.nmudloadedbbq.Size = New System.Drawing.Size(58, 31)
+        Me.nmudloadedbbq.TabIndex = 28
         '
-        'NumericUpDown11
+        'nmudsupreme
         '
-        Me.NumericUpDown11.Location = New System.Drawing.Point(166, 118)
-        Me.NumericUpDown11.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.NumericUpDown11.Name = "NumericUpDown11"
-        Me.NumericUpDown11.ReadOnly = True
-        Me.NumericUpDown11.Size = New System.Drawing.Size(58, 31)
-        Me.NumericUpDown11.TabIndex = 26
+        Me.nmudsupreme.Location = New System.Drawing.Point(166, 118)
+        Me.nmudsupreme.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.nmudsupreme.Name = "nmudsupreme"
+        Me.nmudsupreme.ReadOnly = True
+        Me.nmudsupreme.Size = New System.Drawing.Size(58, 31)
+        Me.nmudsupreme.TabIndex = 26
         '
         'Label9
         '
@@ -539,66 +558,77 @@ Partial Class Form1
         Me.Label9.TabIndex = 27
         Me.Label9.Text = "Loaded BBQ"
         '
-        'Button1
+        'btnrevieworder
         '
-        Me.Button1.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.Button1.Location = New System.Drawing.Point(11, 362)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(474, 51)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "Complete Order"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnrevieworder.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnrevieworder.Location = New System.Drawing.Point(11, 359)
+        Me.btnrevieworder.Name = "btnrevieworder"
+        Me.btnrevieworder.Size = New System.Drawing.Size(474, 77)
+        Me.btnrevieworder.TabIndex = 9
+        Me.btnrevieworder.Text = "Review Order"
+        Me.btnrevieworder.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnreset
         '
-        Me.Button2.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.Button2.Location = New System.Drawing.Point(11, 419)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(474, 51)
-        Me.Button2.TabIndex = 10
-        Me.Button2.Text = "Print Reciept"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnreset.BackColor = System.Drawing.Color.Tomato
+        Me.btnreset.Location = New System.Drawing.Point(11, 444)
+        Me.btnreset.Name = "btnreset"
+        Me.btnreset.Size = New System.Drawing.Size(474, 85)
+        Me.btnreset.TabIndex = 11
+        Me.btnreset.Text = "Reset Order"
+        Me.btnreset.UseVisualStyleBackColor = False
         '
-        'Button3
+        'MenuStrip1
         '
-        Me.Button3.BackColor = System.Drawing.Color.Tomato
-        Me.Button3.Location = New System.Drawing.Point(11, 478)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(474, 51)
-        Me.Button3.TabIndex = 11
-        Me.Button3.Text = "Reset Order"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingsToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(974, 24)
+        Me.MenuStrip1.TabIndex = 12
+        Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'Label14
+        'SettingsToolStripMenuItem
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.BackColor = System.Drawing.Color.White
-        Me.Label14.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(12, 302)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(159, 30)
-        Me.Label14.TabIndex = 16
-        Me.Label14.Text = "Credit Card:"
+        Me.SettingsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ChangePasswordToolStripMenuItem, Me.OpenPasswordTXTToolStripMenuItem, Me.QuitToolStripMenuItem})
+        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.SettingsToolStripMenuItem.Text = "Settings"
+        '
+        'ChangePasswordToolStripMenuItem
+        '
+        Me.ChangePasswordToolStripMenuItem.Name = "ChangePasswordToolStripMenuItem"
+        Me.ChangePasswordToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.ChangePasswordToolStripMenuItem.Text = "Change Password"
+        '
+        'OpenPasswordTXTToolStripMenuItem
+        '
+        Me.OpenPasswordTXTToolStripMenuItem.Name = "OpenPasswordTXTToolStripMenuItem"
+        Me.OpenPasswordTXTToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.OpenPasswordTXTToolStripMenuItem.Text = "Open Password TXT"
+        '
+        'QuitToolStripMenuItem
+        '
+        Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(974, 539)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnreset)
+        Me.Controls.Add(Me.btnrevieworder)
         Me.Controls.Add(Me.lblgourmet)
         Me.Controls.Add(Me.bggourmet)
-        Me.Controls.Add(Me.lblregular)
         Me.Controls.Add(Me.lbladdress)
         Me.Controls.Add(Me.lblname)
         Me.Controls.Add(Me.lbldetails)
         Me.Controls.Add(Me.bgdetails)
         Me.Controls.Add(Me.bgregular)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.Name = "Form1"
         Me.Text = "Delivery?"
@@ -606,20 +636,22 @@ Partial Class Form1
         Me.bgdetails.PerformLayout()
         Me.bgregular.ResumeLayout(False)
         Me.bgregular.PerformLayout()
-        CType(Me.NumericUpDown7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmudveggie, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmudmargherita, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmudmhawaiian, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmudmeatlovers, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmudham, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmudcheese, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmudpepperoni, System.ComponentModel.ISupportInitialize).EndInit()
         Me.bggourmet.ResumeLayout(False)
         Me.bggourmet.PerformLayout()
-        CType(Me.NumericUpDown8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.numdamericano, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmudbeefonion, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmudnewyorker, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmudloadedbbq, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmudsupreme, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -639,35 +671,39 @@ Partial Class Form1
     Friend WithEvents lblgourmet As Label
     Friend WithEvents bggourmet As Panel
     Friend WithEvents lblpepperoni As Label
-    Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents NumericUpDown3 As NumericUpDown
+    Friend WithEvents nmudpepperoni As NumericUpDown
+    Friend WithEvents nmudham As NumericUpDown
     Friend WithEvents Label2 As Label
-    Friend WithEvents NumericUpDown2 As NumericUpDown
+    Friend WithEvents nmudcheese As NumericUpDown
     Friend WithEvents Label1 As Label
-    Friend WithEvents NumericUpDown7 As NumericUpDown
+    Friend WithEvents nmudveggie As NumericUpDown
     Friend WithEvents Label6 As Label
-    Friend WithEvents NumericUpDown4 As NumericUpDown
+    Friend WithEvents nmudmargherita As NumericUpDown
     Friend WithEvents Label3 As Label
-    Friend WithEvents NumericUpDown5 As NumericUpDown
+    Friend WithEvents nmudmhawaiian As NumericUpDown
     Friend WithEvents Label4 As Label
-    Friend WithEvents NumericUpDown6 As NumericUpDown
+    Friend WithEvents nmudmeatlovers As NumericUpDown
     Friend WithEvents Label5 As Label
-    Friend WithEvents NumericUpDown8 As NumericUpDown
+    Friend WithEvents numdamericano As NumericUpDown
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents NumericUpDown9 As NumericUpDown
-    Friend WithEvents NumericUpDown12 As NumericUpDown
+    Friend WithEvents nmudbeefonion As NumericUpDown
+    Friend WithEvents nmudnewyorker As NumericUpDown
     Friend WithEvents Label10 As Label
-    Friend WithEvents NumericUpDown10 As NumericUpDown
-    Friend WithEvents NumericUpDown11 As NumericUpDown
+    Friend WithEvents nmudloadedbbq As NumericUpDown
+    Friend WithEvents nmudsupreme As NumericUpDown
     Friend WithEvents Label9 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnrevieworder As Button
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtcreditcard As TextBox
     Friend WithEvents lblphone As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Label14 As Label
+    Friend WithEvents btnreset As Button
+    Friend WithEvents PANELEXTENDER As Label
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents SettingsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ChangePasswordToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents QuitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OpenPasswordTXTToolStripMenuItem As ToolStripMenuItem
 End Class
