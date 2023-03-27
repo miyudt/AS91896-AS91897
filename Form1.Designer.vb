@@ -66,7 +66,7 @@ Partial Class Form1
         Me.Label9 = New System.Windows.Forms.Label()
         Me.btnrevieworder = New System.Windows.Forms.Button()
         Me.btnreset = New System.Windows.Forms.Button()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.mmumain = New System.Windows.Forms.MenuStrip()
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ChangePasswordToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenPasswordTXTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -86,7 +86,7 @@ Partial Class Form1
         CType(Me.nmudnewyorker, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmudloadedbbq, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmudsupreme, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuStrip1.SuspendLayout()
+        Me.mmumain.SuspendLayout()
         Me.SuspendLayout()
         '
         'lbldetails
@@ -578,38 +578,38 @@ Partial Class Form1
         Me.btnreset.Text = "Reset Order"
         Me.btnreset.UseVisualStyleBackColor = False
         '
-        'MenuStrip1
+        'mmumain
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingsToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(974, 24)
-        Me.MenuStrip1.TabIndex = 12
-        Me.MenuStrip1.Text = "MenuStrip1"
+        Me.mmumain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingsToolStripMenuItem})
+        Me.mmumain.Location = New System.Drawing.Point(0, 0)
+        Me.mmumain.Name = "mmumain"
+        Me.mmumain.Size = New System.Drawing.Size(974, 24)
+        Me.mmumain.TabIndex = 12
+        Me.mmumain.Text = "mmumain"
         '
         'SettingsToolStripMenuItem
         '
         Me.SettingsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ChangePasswordToolStripMenuItem, Me.OpenPasswordTXTToolStripMenuItem, Me.QuitToolStripMenuItem})
         Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
-        Me.SettingsToolStripMenuItem.Text = "Settings"
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.SettingsToolStripMenuItem.Text = "Misc"
         '
         'ChangePasswordToolStripMenuItem
         '
         Me.ChangePasswordToolStripMenuItem.Name = "ChangePasswordToolStripMenuItem"
-        Me.ChangePasswordToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.ChangePasswordToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ChangePasswordToolStripMenuItem.Text = "Change Password"
         '
         'OpenPasswordTXTToolStripMenuItem
         '
         Me.OpenPasswordTXTToolStripMenuItem.Name = "OpenPasswordTXTToolStripMenuItem"
-        Me.OpenPasswordTXTToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.OpenPasswordTXTToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.OpenPasswordTXTToolStripMenuItem.Text = "Open Password TXT"
         '
         'QuitToolStripMenuItem
         '
         Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'Form1
@@ -626,9 +626,9 @@ Partial Class Form1
         Me.Controls.Add(Me.lbldetails)
         Me.Controls.Add(Me.bgdetails)
         Me.Controls.Add(Me.bgregular)
-        Me.Controls.Add(Me.MenuStrip1)
+        Me.Controls.Add(Me.mmumain)
         Me.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.MainMenuStrip = Me.MenuStrip1
+        Me.MainMenuStrip = Me.mmumain
         Me.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.Name = "Form1"
         Me.Text = "Delivery?"
@@ -650,8 +650,8 @@ Partial Class Form1
         CType(Me.nmudnewyorker, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmudloadedbbq, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmudsupreme, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
+        Me.mmumain.ResumeLayout(False)
+        Me.mmumain.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -701,7 +701,7 @@ Partial Class Form1
     Friend WithEvents lblphone As Label
     Friend WithEvents btnreset As Button
     Friend WithEvents PANELEXTENDER As Label
-    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents mmumain As MenuStrip
     Friend WithEvents SettingsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ChangePasswordToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents QuitToolStripMenuItem As ToolStripMenuItem
