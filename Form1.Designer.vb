@@ -27,7 +27,7 @@ Partial Class Form1
         Me.lbldelivery = New System.Windows.Forms.Label()
         Me.lbladdress = New System.Windows.Forms.Label()
         Me.bgdetails = New System.Windows.Forms.Panel()
-        Me.Label13 = New System.Windows.Forms.Label()
+        Me.lblcreditcard = New System.Windows.Forms.Label()
         Me.txtcreditcard = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.chkdelivery = New System.Windows.Forms.CheckBox()
@@ -136,11 +136,12 @@ Partial Class Form1
         Me.lbladdress.Size = New System.Drawing.Size(112, 30)
         Me.lbladdress.TabIndex = 4
         Me.lbladdress.Text = "Address:"
+        Me.lbladdress.Visible = False
         '
         'bgdetails
         '
         Me.bgdetails.BackColor = System.Drawing.Color.White
-        Me.bgdetails.Controls.Add(Me.Label13)
+        Me.bgdetails.Controls.Add(Me.lblcreditcard)
         Me.bgdetails.Controls.Add(Me.txtcreditcard)
         Me.bgdetails.Controls.Add(Me.Label12)
         Me.bgdetails.Controls.Add(Me.chkdelivery)
@@ -155,17 +156,18 @@ Partial Class Form1
         Me.bgdetails.Size = New System.Drawing.Size(474, 322)
         Me.bgdetails.TabIndex = 5
         '
-        'Label13
+        'lblcreditcard
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.BackColor = System.Drawing.Color.White
-        Me.Label13.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label13.Location = New System.Drawing.Point(12, 262)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(159, 30)
-        Me.Label13.TabIndex = 15
-        Me.Label13.Text = "Credit Card:"
+        Me.lblcreditcard.AutoSize = True
+        Me.lblcreditcard.BackColor = System.Drawing.Color.White
+        Me.lblcreditcard.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblcreditcard.Location = New System.Drawing.Point(12, 262)
+        Me.lblcreditcard.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.lblcreditcard.Name = "lblcreditcard"
+        Me.lblcreditcard.Size = New System.Drawing.Size(159, 30)
+        Me.lblcreditcard.TabIndex = 15
+        Me.lblcreditcard.Text = "Credit Card:"
+        Me.lblcreditcard.Visible = False
         '
         'txtcreditcard
         '
@@ -173,6 +175,7 @@ Partial Class Form1
         Me.txtcreditcard.Name = "txtcreditcard"
         Me.txtcreditcard.Size = New System.Drawing.Size(224, 31)
         Me.txtcreditcard.TabIndex = 14
+        Me.txtcreditcard.Visible = False
         '
         'Label12
         '
@@ -201,6 +204,7 @@ Partial Class Form1
         Me.txtaddress.Name = "txtaddress"
         Me.txtaddress.Size = New System.Drawing.Size(224, 31)
         Me.txtaddress.TabIndex = 3
+        Me.txtaddress.Visible = False
         '
         'txtphone
         '
@@ -597,19 +601,19 @@ Partial Class Form1
         'ChangePasswordToolStripMenuItem
         '
         Me.ChangePasswordToolStripMenuItem.Name = "ChangePasswordToolStripMenuItem"
-        Me.ChangePasswordToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ChangePasswordToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
         Me.ChangePasswordToolStripMenuItem.Text = "Change Password"
         '
         'OpenPasswordTXTToolStripMenuItem
         '
         Me.OpenPasswordTXTToolStripMenuItem.Name = "OpenPasswordTXTToolStripMenuItem"
-        Me.OpenPasswordTXTToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.OpenPasswordTXTToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
         Me.OpenPasswordTXTToolStripMenuItem.Text = "Open Password TXT"
         '
         'QuitToolStripMenuItem
         '
         Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
         Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'Form1
@@ -696,7 +700,7 @@ Partial Class Form1
     Friend WithEvents Label9 As Label
     Friend WithEvents btnrevieworder As Button
     Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
+    Friend WithEvents lblcreditcard As Label
     Friend WithEvents txtcreditcard As TextBox
     Friend WithEvents lblphone As Label
     Friend WithEvents btnreset As Button

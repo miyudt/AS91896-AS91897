@@ -15,4 +15,18 @@
             End If
         End If
     End Sub
+
+    Private Sub chkdelivery_CheckedChanged(sender As Object, e As EventArgs) Handles chkdelivery.CheckedChanged
+        If chkdelivery.Checked = False Then
+            txtaddress.Hide()
+            txtcreditcard.Hide()
+            lbladdress.Hide()
+            lblcreditcard.Hide()
+        Else
+            txtaddress.Show()
+            txtcreditcard.Show()
+            lbladdress.Show()
+            lblcreditcard.Show()
+        End If
+    End Sub
 End Class
