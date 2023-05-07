@@ -172,6 +172,7 @@ Partial Class Form1
         'txtcreditcard
         '
         Me.txtcreditcard.Location = New System.Drawing.Point(232, 262)
+        Me.txtcreditcard.MaxLength = 16
         Me.txtcreditcard.Name = "txtcreditcard"
         Me.txtcreditcard.Size = New System.Drawing.Size(224, 31)
         Me.txtcreditcard.TabIndex = 14
@@ -209,6 +210,7 @@ Partial Class Form1
         'txtphone
         '
         Me.txtphone.Location = New System.Drawing.Point(232, 140)
+        Me.txtphone.MaxLength = 11
         Me.txtphone.Name = "txtphone"
         Me.txtphone.Size = New System.Drawing.Size(224, 31)
         Me.txtphone.TabIndex = 1

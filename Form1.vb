@@ -17,16 +17,49 @@
     End Sub
 
     Private Sub chkdelivery_CheckedChanged(sender As Object, e As EventArgs) Handles chkdelivery.CheckedChanged
-        If chkdelivery.Checked = False Then
-            txtaddress.Hide()
-            txtcreditcard.Hide()
-            lbladdress.Hide()
-            lblcreditcard.Hide()
+        If chkdelivery.Checked = False Then 'if the tickbox is not ticked, completes the following:
+            txtaddress.Hide() 'hides address
+            txtcreditcard.Hide() 'hides creditcard
+            lbladdress.Hide() 'hides address
+            lblcreditcard.Hide() 'hides creditcard
         Else
-            txtaddress.Show()
-            txtcreditcard.Show()
-            lbladdress.Show()
-            lblcreditcard.Show()
+            txtaddress.Show() 'shows address
+            txtcreditcard.Show() 'shows creditcard
+            lbladdress.Show() 'shows address 
+            lblcreditcard.Show() 'shows creditcard
         End If
+    End Sub
+
+    Public Sub btnrevieworder_Click(sender As Object, e As EventArgs) Handles btnrevieworder.Click
+        Dim TrimmedName As String = txtname.Text.Trim 'trims spaces off text
+        Dim TrimmedPH As String = Val(txtphone.Text.Trim) 'trims spaces off text
+        Dim TrimmedCredit As String = Val(txtcreditcard.Text.Trim) 'trims spaces off text
+        Dim TrimmedAddress As String = txtaddress.Text.Trim 'trims spaces off text
+        If chkdelivery.Checked = True Then
+            If TrimmedName = "" Or TrimmedPH = 0 Or TrimmedAddress = "" Or TrimmedCredit = 0 Then
+                MessageBox.Show("Fill In All Fields For Delivery") 'fails if all requirements are not met
+            Else
+                Form2.txtname.Text = "Name: " & TrimmedName 'pushes name to form2
+                Form2.txtaddress.Text = "Address: " & TrimmedAddress 'pushes address to form2
+                Form2.txtph.Text = "Phone Number: " & TrimmedPH 'pushes phone number to form2
+                Form2.txtcredit.Text = "Credit Card: " & TrimmedCredit 'pushes credit card to form2
+                Form2.Show() 'show form 2
+                Me.Hide() 'hide form 1
+                Form2.txtcredit.Show() 'shows credit card text if hidden
+                Form2.txtaddress.Show() 'shows address text if hidden
+            End If
+        Else
+            If TrimmedName = "" Or TrimmedPH = 0 Then
+                MessageBox.Show("Fill In All Fields For Pickup") 'fails if all requirements are not met
+            Else
+                Form2.txtph.Text = "Phone Number: " & TrimmedPH 'pushes phone number to form2
+                Form2.txtname.Text = "Name: " & TrimmedName 'pushes name to form2
+                Form2.txtcredit.Hide() 'hides credit text if shown
+                Form2.txtaddress.Hide() 'hides address text if shown
+                Form2.Show() 'shows form 2
+                Me.Hide() 'hides form 1
+            End If
+        End If
+
     End Sub
 End Class
