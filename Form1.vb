@@ -1,4 +1,6 @@
 ﻿Public Class Form1
+    Dim PizzaOrder(0, 11)
+
     Private Sub txtphone_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtphone.KeyPress
 
         If Asc(e.KeyChar) <> 8 Then 'keeps backspace key enabled as you may need to delete numbers
@@ -60,6 +62,9 @@
                 Me.Hide() 'hides form 1
             End If
         End If
+    End Sub
 
+    Private Sub QuitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuitToolStripMenuItem.Click
+        End
     End Sub
 End Class

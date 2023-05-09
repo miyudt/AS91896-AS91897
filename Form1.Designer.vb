@@ -603,19 +603,19 @@ Partial Class Form1
         'ChangePasswordToolStripMenuItem
         '
         Me.ChangePasswordToolStripMenuItem.Name = "ChangePasswordToolStripMenuItem"
-        Me.ChangePasswordToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.ChangePasswordToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ChangePasswordToolStripMenuItem.Text = "Change Password"
         '
         'OpenPasswordTXTToolStripMenuItem
         '
         Me.OpenPasswordTXTToolStripMenuItem.Name = "OpenPasswordTXTToolStripMenuItem"
-        Me.OpenPasswordTXTToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.OpenPasswordTXTToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.OpenPasswordTXTToolStripMenuItem.Text = "Open Password TXT"
         '
         'QuitToolStripMenuItem
         '
         Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'Form1
