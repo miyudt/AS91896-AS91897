@@ -22,48 +22,49 @@ Partial Class Form4
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        lblHeading = New Label()
-        txtPassword = New TextBox()
-        btnEnter = New Button()
-        SuspendLayout()
-        ' 
-        ' lblHeading
-        ' 
-        lblHeading.AutoSize = True
-        lblHeading.Location = New Point(8, 9)
-        lblHeading.Name = "lblHeading"
-        lblHeading.Size = New Size(154, 15)
-        lblHeading.TabIndex = 0
-        lblHeading.Text = "Enter Application Password:"
-        ' 
-        ' txtPassword
-        ' 
-        txtPassword.Location = New Point(8, 31)
-        txtPassword.Name = "txtPassword"
-        txtPassword.Size = New Size(154, 23)
-        txtPassword.TabIndex = 1
-        ' 
-        ' btnEnter
-        ' 
-        btnEnter.Location = New Point(8, 60)
-        btnEnter.Name = "btnEnter"
-        btnEnter.Size = New Size(154, 23)
-        btnEnter.TabIndex = 2
-        btnEnter.Text = "Enter"
-        btnEnter.UseVisualStyleBackColor = True
-        ' 
-        ' Form4
-        ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
-        AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(173, 94)
-        Controls.Add(btnEnter)
-        Controls.Add(txtPassword)
-        Controls.Add(lblHeading)
-        Name = "Form4"
-        Text = "Form4"
-        ResumeLayout(False)
-        PerformLayout()
+        Me.lblHeading = New System.Windows.Forms.Label()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.btnEnter = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'lblHeading
+        '
+        Me.lblHeading.AutoSize = True
+        Me.lblHeading.Location = New System.Drawing.Point(8, 9)
+        Me.lblHeading.Name = "lblHeading"
+        Me.lblHeading.Size = New System.Drawing.Size(154, 15)
+        Me.lblHeading.TabIndex = 0
+        Me.lblHeading.Text = "Enter Application Password:"
+        '
+        'txtPassword
+        '
+        Me.txtPassword.Location = New System.Drawing.Point(8, 31)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(154, 23)
+        Me.txtPassword.TabIndex = 1
+        '
+        'btnEnter
+        '
+        Me.btnEnter.Location = New System.Drawing.Point(8, 60)
+        Me.btnEnter.Name = "btnEnter"
+        Me.btnEnter.Size = New System.Drawing.Size(154, 23)
+        Me.btnEnter.TabIndex = 2
+        Me.btnEnter.Text = "Enter"
+        Me.btnEnter.UseVisualStyleBackColor = True
+        '
+        'Form4
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(173, 94)
+        Me.Controls.Add(Me.btnEnter)
+        Me.Controls.Add(Me.txtPassword)
+        Me.Controls.Add(Me.lblHeading)
+        Me.Name = "Form4"
+        Me.Text = "Form4"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
 
     Friend WithEvents lblHeading As Label

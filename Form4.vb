@@ -6,7 +6,7 @@
         Else
             Form1.Show()
             Me.Hide()
-            MessageBox.Show("READ FOLLOWING:" & vbCrLf & vbCrLf & "Please click enter on the password box" & vbCrLf & vbCrLf & "Please go to the misc tab along the top of your screen and click Open Password TXT to make a password file, type the new password into the password file and then save the file. This will be the new password for the application. If this is to be changed again, this can be done through the txt or the editor in the program.")
+            MessageBox.Show("The PASSWORD.txt file was removed from its directory or is corrupt, please replace immediately!")
         End If
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnEnter.Click
