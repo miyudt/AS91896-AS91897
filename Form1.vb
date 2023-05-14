@@ -1,9 +1,7 @@
 ﻿Public Class Form1
     Dim PizzaOrder(0, 11)
-
-
+    Public filePath As String = "PASSWORD.txt" 'defines name for txt file
     Private Sub txtphone_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtphone.KeyPress
-
         If Asc(e.KeyChar) <> 8 Then 'keeps backspace key enabled as you may need to delete numbers
             If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then 'disables all keys that are not 0-9 or backspace
                 e.Handled = True 'makes sure all extra key presses are declined that are not 0-9 or backspace
@@ -69,8 +67,7 @@
         End 'ends program
     End Sub
     Private Sub OpenPasswordTXTToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenPasswordTXTToolStripMenuItem.Click
-        Dim filePath As String = "PASSWORD.txt" 'set the file path relative to the application incase end user dosent have same username on win10/11
-        filePath = System.IO.Path.Combine(Application.StartupPath, filePath) 'gets the full path of the file by combining the application directory and the file name
+        filePath = System.IO.Path.Combine(Application.StartupPath, filePath) 'gets full path by combining directory and filename
         System.Diagnostics.Process.Start("notepad.exe", filePath) 'open the file with notepad, executing crashes the code ;_;
     End Sub
     Private Sub ChangePasswordToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ChangePasswordToolStripMenuItem.Click
