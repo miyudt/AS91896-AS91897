@@ -1,6 +1,7 @@
 ﻿Public Class Form1
     Dim PizzaOrder(0, 11)
 
+
     Private Sub txtphone_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtphone.KeyPress
 
         If Asc(e.KeyChar) <> 8 Then 'keeps backspace key enabled as you may need to delete numbers
@@ -65,6 +66,14 @@
     End Sub
 
     Private Sub QuitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuitToolStripMenuItem.Click
-        End
+        End 'ends program
+    End Sub
+    Private Sub OpenPasswordTXTToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenPasswordTXTToolStripMenuItem.Click
+        Dim filePath As String = "PASSWORD.txt" 'set the file path relative to the application incase end user dosent have same username on win10/11
+        filePath = System.IO.Path.Combine(Application.StartupPath, filePath) 'gets the full path of the file by combining the application directory and the file name
+        System.Diagnostics.Process.Start("notepad.exe", filePath) 'open the file with notepad, executing crashes the code ;_;
+    End Sub
+    Private Sub ChangePasswordToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ChangePasswordToolStripMenuItem.Click
+        Form3.Show() 'shows form3
     End Sub
 End Class
