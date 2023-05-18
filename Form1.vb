@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-    Dim PizzaOrder(0, 11)
+    Dim PizzaOrder(1, 11)
     Public filePath As String = "PASSWORD.txt" 'defines name for txt file
     Private Sub txtphone_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtphone.KeyPress
         If Asc(e.KeyChar) <> 8 Then 'keeps backspace key enabled as you may need to delete numbers

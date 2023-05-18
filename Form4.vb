@@ -2,11 +2,15 @@
     Dim fileReader As String
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If System.IO.File.Exists(Form1.filePath) Then
-            fileReader = My.Computer.FileSystem.ReadAllText(Form1.filePath) 'reads file text, not my code, from https://learn.microsoft.com/en-us/dotnet/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files        If fileReader = "" Then
+            fileReader = My.Computer.FileSystem.ReadAllText(Form1.filePath) 'reads file text, not my code, from https://learn.microsoft.com/en-us/dotnet/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files
+            If fileReader = "" Then
+                Form1.Show()
+                Me.Hide()
+            End If
         Else
             Form1.Show()
             Me.Hide()
-            MessageBox.Show("The PASSWORD.txt file was removed from its directory or is corrupt, please replace immediately!")
+            MessageBox.Show("The PASSWORD.txt file was removed from its directory or is corrupt, please replace immediately!") 'stops the program from crashing if no file is found
         End If
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnEnter.Click

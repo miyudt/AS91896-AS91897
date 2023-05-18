@@ -6,7 +6,7 @@
             MessageBox.Show("Password updated successfully")
             Me.Hide()
         Else
-            MessageBox.Show("Passwords do not match")
+            MessageBox.Show("Passwords do not match") 'declines progress
         End If
     End Sub
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
