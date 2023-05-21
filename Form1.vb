@@ -73,4 +73,18 @@
     Private Sub ChangePasswordToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ChangePasswordToolStripMenuItem.Click
         Form3.Show() 'shows form3
     End Sub
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        PizzaOrder(1, 0) = nmudpepperoni.Text
+        PizzaOrder(1, 1) = nmudmeatlovers.Text
+        PizzaOrder(1, 2) = nmudcheese.Text
+        PizzaOrder(1, 3) = nmudmhawaiian.Text
+        PizzaOrder(1, 4) = nmudham.Text
+        PizzaOrder(1, 5) = nmudmargherita.Text
+        PizzaOrder(1, 6) = nmudveggie.Text
+        PizzaOrder(1, 7) = nmudnewyorker.Text
+        PizzaOrder(1, 8) = nmudbeefonion.Text
+        PizzaOrder(1, 9) = nmudsupreme.Text
+        PizzaOrder(1, 10) = numdamericano.Text
+        PizzaOrder(1, 11) = nmudloadedbbq.Text
+    End Sub
 End Class
