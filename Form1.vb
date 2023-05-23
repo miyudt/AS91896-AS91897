@@ -48,6 +48,7 @@
                 Me.Hide() 'hide form 1
                 Form2.txtcredit.Show() 'shows credit card text if hidden
                 Form2.txtaddress.Show() 'shows address text if hidden
+                PrintPizzas()
             End If
         Else
             If TrimmedName = "" Or TrimmedPH = 0 Then
@@ -73,7 +74,7 @@
     Private Sub ChangePasswordToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ChangePasswordToolStripMenuItem.Click
         Form3.Show() 'shows form3
     End Sub
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub PrintPizzas()
         PizzaOrder(1, 0) = nmudpepperoni.Text
         PizzaOrder(1, 1) = nmudmeatlovers.Text
         PizzaOrder(1, 2) = nmudcheese.Text
@@ -86,5 +87,8 @@
         PizzaOrder(1, 9) = nmudsupreme.Text
         PizzaOrder(1, 10) = numdamericano.Text
         PizzaOrder(1, 11) = nmudloadedbbq.Text
+        For x = 0 To 11
+            Form2.rtxpricebox = Form2.rtxpricebox & PizzaOrder(1, x) & vbCrLf
+        Next
     End Sub
 End Class
