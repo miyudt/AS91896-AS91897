@@ -24,6 +24,10 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Me.txttitle = New System.Windows.Forms.Label()
         Me.bgdetails = New System.Windows.Forms.Panel()
+        Me.rtxpricebox = New System.Windows.Forms.RichTextBox()
+        Me.rtxqty = New System.Windows.Forms.RichTextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.rtxpizzaname = New System.Windows.Forms.RichTextBox()
         Me.btnback = New System.Windows.Forms.Button()
         Me.txtcredit = New System.Windows.Forms.Label()
         Me.txtaddress = New System.Windows.Forms.Label()
@@ -31,10 +35,6 @@ Partial Class Form2
         Me.txtname = New System.Windows.Forms.Label()
         Me.PANELEXTENDER = New System.Windows.Forms.Label()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
-        Me.rtxpizzaname = New System.Windows.Forms.RichTextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.rtxqty = New System.Windows.Forms.RichTextBox()
-        Me.rtxpricebox = New System.Windows.Forms.RichTextBox()
         Me.bgdetails.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -67,6 +67,40 @@ Partial Class Form2
         Me.bgdetails.Name = "bgdetails"
         Me.bgdetails.Size = New System.Drawing.Size(774, 429)
         Me.bgdetails.TabIndex = 6
+        '
+        'rtxpricebox
+        '
+        Me.rtxpricebox.Location = New System.Drawing.Point(588, 58)
+        Me.rtxpricebox.Name = "rtxpricebox"
+        Me.rtxpricebox.Size = New System.Drawing.Size(54, 252)
+        Me.rtxpricebox.TabIndex = 23
+        Me.rtxpricebox.Text = ""
+        '
+        'rtxqty
+        '
+        Me.rtxqty.Location = New System.Drawing.Point(536, 60)
+        Me.rtxqty.Name = "rtxqty"
+        Me.rtxqty.Size = New System.Drawing.Size(46, 252)
+        Me.rtxqty.TabIndex = 22
+        Me.rtxqty.Text = ""
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.ForestGreen
+        Me.Button1.Location = New System.Drawing.Point(386, 338)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(383, 85)
+        Me.Button1.TabIndex = 21
+        Me.Button1.Text = "Print"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'rtxpizzaname
+        '
+        Me.rtxpizzaname.Location = New System.Drawing.Point(386, 59)
+        Me.rtxpizzaname.Name = "rtxpizzaname"
+        Me.rtxpizzaname.Size = New System.Drawing.Size(144, 253)
+        Me.rtxpizzaname.TabIndex = 20
+        Me.rtxpizzaname.Text = ""
         '
         'btnback
         '
@@ -138,40 +172,6 @@ Partial Class Form2
         Me.PANELEXTENDER.Size = New System.Drawing.Size(142, 29)
         Me.PANELEXTENDER.TabIndex = 16
         Me.PANELEXTENDER.Text = "Credit Card:"
-        '
-        'rtxpizzaname
-        '
-        Me.rtxpizzaname.Location = New System.Drawing.Point(386, 59)
-        Me.rtxpizzaname.Name = "rtxpizzaname"
-        Me.rtxpizzaname.Size = New System.Drawing.Size(144, 221)
-        Me.rtxpizzaname.TabIndex = 20
-        Me.rtxpizzaname.Text = ""
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.ForestGreen
-        Me.Button1.Location = New System.Drawing.Point(386, 338)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(383, 85)
-        Me.Button1.TabIndex = 21
-        Me.Button1.Text = "Print"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'rtxqty
-        '
-        Me.rtxqty.Location = New System.Drawing.Point(536, 60)
-        Me.rtxqty.Name = "rtxqty"
-        Me.rtxqty.Size = New System.Drawing.Size(34, 220)
-        Me.rtxqty.TabIndex = 22
-        Me.rtxqty.Text = ""
-        '
-        'rtxpricebox
-        '
-        Me.rtxpricebox.Location = New System.Drawing.Point(576, 60)
-        Me.rtxpricebox.Name = "rtxpricebox"
-        Me.rtxpricebox.Size = New System.Drawing.Size(54, 220)
-        Me.rtxpricebox.TabIndex = 23
-        Me.rtxpricebox.Text = ""
         '
         'Form2
         '

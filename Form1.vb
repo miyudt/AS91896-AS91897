@@ -60,6 +60,7 @@
                 Form2.txtaddress.Hide() 'hides address text if shown
                 Form2.Show() 'shows form 2
                 Me.Hide() 'hides form 1
+                PrintPizzas()
             End If
         End If
     End Sub
@@ -75,20 +76,39 @@
         Form3.Show() 'shows form3
     End Sub
     Private Sub PrintPizzas()
-        PizzaOrder(1, 0) = nmudpepperoni.Text
-        PizzaOrder(1, 1) = nmudmeatlovers.Text
-        PizzaOrder(1, 2) = nmudcheese.Text
-        PizzaOrder(1, 3) = nmudmhawaiian.Text
-        PizzaOrder(1, 4) = nmudham.Text
-        PizzaOrder(1, 5) = nmudmargherita.Text
-        PizzaOrder(1, 6) = nmudveggie.Text
-        PizzaOrder(1, 7) = nmudnewyorker.Text
-        PizzaOrder(1, 8) = nmudbeefonion.Text
-        PizzaOrder(1, 9) = nmudsupreme.Text
-        PizzaOrder(1, 10) = numdamericano.Text
-        PizzaOrder(1, 11) = nmudloadedbbq.Text
-        For x = 0 To 11
-            Form2.rtxpricebox = Form2.rtxpricebox & PizzaOrder(1, x) & vbCrLf
+        PizzaOrder(1, 0) = nmudpizza1.Value 'writes array
+        PizzaOrder(1, 1) = nmudpizza2.Value
+        PizzaOrder(1, 2) = nmudpizza3.Value
+        PizzaOrder(1, 3) = nmudpizza4.Value
+        PizzaOrder(1, 4) = nmudpizza5.Value
+        PizzaOrder(1, 5) = nmudpizza6.Value
+        PizzaOrder(1, 6) = nmudpizza7.Value
+        PizzaOrder(1, 7) = nmudpizza8.Value
+        PizzaOrder(1, 8) = nmudpizza9.Value
+        PizzaOrder(1, 9) = nmudpizza10.Value
+        PizzaOrder(1, 10) = nmudpizza11.Value
+        PizzaOrder(1, 11) = nmudpizza12.Value
+        PizzaOrder(0, 0) = lblpizza1.Text
+        PizzaOrder(0, 1) = lblpizza2.Text
+        PizzaOrder(0, 2) = lblpizza3.Text
+        PizzaOrder(0, 3) = lblpizza4.Text
+        PizzaOrder(0, 4) = lblpizza5.Text
+        PizzaOrder(0, 5) = lblpizza6.Text
+        PizzaOrder(0, 6) = lblpizza7.Text
+        PizzaOrder(0, 7) = lblpizza8.Text
+        PizzaOrder(0, 8) = lblpizza9.Text
+        PizzaOrder(0, 9) = lblpizza10.Text
+        PizzaOrder(0, 10) = lblpizza11.Text
+        PizzaOrder(0, 11) = lblpizza12.Text
+        For x = 0 To 6
+            Form2.rtxqty.Text = Form2.rtxqty.Text & PizzaOrder(1, x) & vbCrLf 'adds number of any set pizza
+            Form2.rtxpricebox.Text = Form2.rtxpricebox.Text & (PizzaOrder(1, x) * 8.5) & vbCrLf 'adds price of any set pizza
+            Form2.rtxpizzaname.Text = Form2.rtxpizzaname.Text & PizzaOrder(0, x) & vbCrLf 'adds name of any set pizza
+        Next
+        For x = 7 To 11
+            Form2.rtxqty.Text = Form2.rtxqty.Text & PizzaOrder(1, x) & vbCrLf 'adds number of any set pizza
+            Form2.rtxpricebox.Text = Form2.rtxpricebox.Text & (PizzaOrder(1, x) * 13.5) & vbCrLf 'adds price of any set pizza
+            Form2.rtxpizzaname.Text = Form2.rtxpizzaname.Text & PizzaOrder(0, x) & vbCrLf 'adds name of any set pizza
         Next
     End Sub
 End Class
