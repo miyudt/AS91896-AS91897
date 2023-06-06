@@ -35,6 +35,7 @@ Partial Class Form2
         Me.txtname = New System.Windows.Forms.Label()
         Me.PANELEXTENDER = New System.Windows.Forms.Label()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.rtxreciept = New System.Windows.Forms.RichTextBox()
         Me.bgdetails.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -53,6 +54,7 @@ Partial Class Form2
         'bgdetails
         '
         Me.bgdetails.BackColor = System.Drawing.Color.White
+        Me.bgdetails.Controls.Add(Me.rtxreciept)
         Me.bgdetails.Controls.Add(Me.rtxpricebox)
         Me.bgdetails.Controls.Add(Me.rtxqty)
         Me.bgdetails.Controls.Add(Me.Button1)
@@ -173,6 +175,14 @@ Partial Class Form2
         Me.PANELEXTENDER.TabIndex = 16
         Me.PANELEXTENDER.Text = "Credit Card:"
         '
+        'rtxreciept
+        '
+        Me.rtxreciept.Location = New System.Drawing.Point(311, 0)
+        Me.rtxreciept.Name = "rtxreciept"
+        Me.rtxreciept.Size = New System.Drawing.Size(271, 423)
+        Me.rtxreciept.TabIndex = 24
+        Me.rtxreciept.Text = ""
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -202,4 +212,5 @@ Partial Class Form2
     Friend WithEvents rtxqty As RichTextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents rtxpizzaname As RichTextBox
+    Friend WithEvents rtxreciept As RichTextBox
 End Class

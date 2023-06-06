@@ -110,5 +110,9 @@
             Form2.rtxpricebox.Text = Form2.rtxpricebox.Text & (PizzaOrder(1, x) * 13.5) & vbCrLf 'adds price of any set pizza
             Form2.rtxpizzaname.Text = Form2.rtxpizzaname.Text & PizzaOrder(0, x) & vbCrLf 'adds name of any set pizza
         Next
+        Form2.rtxreciept.Text = "Rotorua Dream Pizza" & vbCrLf & "Call us at 0800 696 9696" & vbCrLf & "*************************" & vbCrLf
+        For x = 0 To 6
+            Form2.rtxreciept.Text = Form2.rtxreciept.Text & PizzaOrder(1, x).Text & "          " & PizzaOrder(0, x) & "          " & (PizzaOrder(0, x) * 8.5)
+        Next
     End Sub
 End Class
