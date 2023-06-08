@@ -71,6 +71,7 @@ Partial Class Form1
         Me.ChangePasswordToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenPasswordTXTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.bgdetails.SuspendLayout()
         Me.bgregular.SuspendLayout()
         CType(Me.nmudpizza7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -712,4 +713,5 @@ Partial Class Form1
     Friend WithEvents ChangePasswordToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents QuitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OpenPasswordTXTToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
 End Class

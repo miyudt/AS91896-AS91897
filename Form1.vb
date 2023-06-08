@@ -40,24 +40,14 @@
             If TrimmedName = "" Or TrimmedPH = 0 Or TrimmedAddress = "" Or TrimmedCredit = 0 Then
                 MessageBox.Show("Fill In All Fields For Delivery") 'fails if all requirements are not met
             Else
-                Form2.txtname.Text = "Name: " & TrimmedName 'pushes name to form2
-                Form2.txtaddress.Text = "Address: " & TrimmedAddress 'pushes address to form2
-                Form2.txtph.Text = "Phone Number: " & TrimmedPH 'pushes phone number to form2
-                Form2.txtcredit.Text = "Credit Card: " & TrimmedCredit 'pushes credit card to form2
                 Form2.Show() 'show form 2
                 Me.Hide() 'hide form 1
-                Form2.txtcredit.Show() 'shows credit card text if hidden
-                Form2.txtaddress.Show() 'shows address text if hidden
                 PrintPizzas()
             End If
         Else
             If TrimmedName = "" Or TrimmedPH = 0 Then
                 MessageBox.Show("Fill In All Fields For Pickup") 'fails if all requirements are not met
             Else
-                Form2.txtph.Text = "Phone Number: " & TrimmedPH 'pushes phone number to form2
-                Form2.txtname.Text = "Name: " & TrimmedName 'pushes name to form2
-                Form2.txtcredit.Hide() 'hides credit text if shown
-                Form2.txtaddress.Hide() 'hides address text if shown
                 Form2.Show() 'shows form 2
                 Me.Hide() 'hides form 1
                 PrintPizzas()
@@ -76,6 +66,10 @@
         Form3.Show() 'shows form3
     End Sub
     Private Sub PrintPizzas()
+        Dim TrimmedName As String = txtname.Text.Trim 'trims spaces off text
+        Dim TrimmedPH As String = Val(txtphone.Text.Trim) 'trims spaces off text
+        Dim TrimmedCredit As String = txtcreditcard.Text.Trim 'trims spaces off text
+        Dim TrimmedAddress As String = txtaddress.Text.Trim 'trims spaces off text
         PizzaOrder(1, 0) = nmudpizza1.Value 'writes array
         PizzaOrder(1, 1) = nmudpizza2.Value
         PizzaOrder(1, 2) = nmudpizza3.Value
@@ -100,19 +94,24 @@
         PizzaOrder(0, 9) = lblpizza10.Text
         PizzaOrder(0, 10) = lblpizza11.Text
         PizzaOrder(0, 11) = lblpizza12.Text
+        Form2.rtxreciept.Text = "Rotorua Dream Pizza" & vbCrLf & "Call us at 0800 696 9696" & vbCrLf & "12 Amohau Road" & vbCrLf & "**************************************************" & vbCrLf & TrimmedName & vbCrLf & TrimmedPH & vbCrLf & TrimmedCredit & vbCrLf & TrimmedAddress & vbCrLf & "**************************************************" & vbCrLf
         For x = 0 To 6
-            Form2.rtxqty.Text = Form2.rtxqty.Text & PizzaOrder(1, x) & vbCrLf 'adds number of any set pizza
-            Form2.rtxpricebox.Text = Form2.rtxpricebox.Text & (PizzaOrder(1, x) * 8.5) & vbCrLf 'adds price of any set pizza
-            Form2.rtxpizzaname.Text = Form2.rtxpizzaname.Text & PizzaOrder(0, x) & vbCrLf 'adds name of any set pizza
+            If PizzaOrder(0, x).Length < 8 Then
+                Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 8.5)) & vbCrLf
+            Else
+                Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 8.5)) & vbCrLf
+            End If
         Next
         For x = 7 To 11
-            Form2.rtxqty.Text = Form2.rtxqty.Text & PizzaOrder(1, x) & vbCrLf 'adds number of any set pizza
-            Form2.rtxpricebox.Text = Form2.rtxpricebox.Text & (PizzaOrder(1, x) * 13.5) & vbCrLf 'adds price of any set pizza
-            Form2.rtxpizzaname.Text = Form2.rtxpizzaname.Text & PizzaOrder(0, x) & vbCrLf 'adds name of any set pizza
+            If PizzaOrder(0, x).Length < 8 Then
+                Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 13.5)) & vbCrLf
+            Else
+                Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 13.5)) & vbCrLf
+            End If
         Next
-        Form2.rtxreciept.Text = "Rotorua Dream Pizza" & vbCrLf & "Call us at 0800 696 9696" & vbCrLf & "*************************" & vbCrLf
-        For x = 0 To 6
-            Form2.rtxreciept.Text = Form2.rtxreciept.Text & PizzaOrder(1, x).Text & "          " & PizzaOrder(0, x) & "          " & (PizzaOrder(0, x) * 8.5)
-        Next
+        Form2.rtxreciept.Text += "**************************************************" & vbCrLf & "Thanks for shopping with us ^^"
+    End Sub
+    Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+        e.Graphics.DrawString(Form2.rtxreciept.Text, New Font("Arial", 12, FontStyle.Regular), Brushes.Black, 20, 20)
     End Sub
 End Class
