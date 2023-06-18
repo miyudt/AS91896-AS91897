@@ -114,4 +114,8 @@
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
         e.Graphics.DrawString(Form2.rtxreciept.Text, New Font("Arial", 12, FontStyle.Regular), Brushes.Black, 20, 20)
     End Sub
+
+    Private Sub lblpizza10_Click(sender As Object, e As EventArgs) Handles lblpizza10.Click
+
+    End Sub
 End Class

@@ -619,6 +619,9 @@ Partial Class Form1
         Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
         Me.QuitToolStripMenuItem.Text = "Quit"
         '
+        'PrintDocument1
+        '
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
