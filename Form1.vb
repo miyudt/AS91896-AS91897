@@ -1,6 +1,9 @@
 ﻿Public Class Form1
     Dim PizzaOrder(1, 11)
     Public filePath As String = "PASSWORD.txt" 'defines name for txt file
+    Dim FinalCost As Decimal
+    Const NORMALPIZZA = 8.5
+    Const GOURMETPIZZA = 13
     Private Sub txtphone_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtphone.KeyPress
         If Asc(e.KeyChar) <> 8 Then 'keeps backspace key enabled as you may need to delete numbers
             If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then 'disables all keys that are not 0-9 or backspace
@@ -66,6 +69,7 @@
         Form3.Show() 'shows form3
     End Sub
     Private Sub PrintPizzas()
+        FinalCost = 0
         Dim TrimmedName As String = txtname.Text.Trim 'trims spaces off text
         Dim TrimmedPH As String = Val(txtphone.Text.Trim) 'trims spaces off text
         Dim TrimmedCredit As String = txtcreditcard.Text.Trim 'trims spaces off text
@@ -97,18 +101,23 @@
         Form2.rtxreciept.Text = "Rotorua Dream Pizza" & vbCrLf & "Call us at 0800 696 9696" & vbCrLf & "12 Amohau Road" & vbCrLf & "**************************************************" & vbCrLf & TrimmedName & vbCrLf & TrimmedPH & vbCrLf & TrimmedCredit & vbCrLf & TrimmedAddress & vbCrLf & "**************************************************" & vbCrLf
         For x = 0 To 6
             If PizzaOrder(0, x).Length < 8 Then
+                FinalCost += PizzaOrder(1, x) * 8.5
                 Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 8.5)) & vbCrLf
             Else
+                FinalCost += PizzaOrder(1, x) * 8.5
                 Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 8.5)) & vbCrLf
             End If
         Next
         For x = 7 To 11
             If PizzaOrder(0, x).Length < 8 Then
+                FinalCost += PizzaOrder(1, x) * 13.5
                 Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 13.5)) & vbCrLf
             Else
+                FinalCost += PizzaOrder(1, x) * 13.5
                 Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 13.5)) & vbCrLf
             End If
         Next
+        Form2.rtxreciept.Text += "Total:" & vbTab & vbTab & vbTab & FormatCurrency(FinalCost) & vbCrLf
         Form2.rtxreciept.Text += "**************************************************" & vbCrLf & "Thanks for shopping with us ^^"
     End Sub
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage

@@ -531,9 +531,9 @@ Partial Class Form1
         Me.lblpizza10.Location = New System.Drawing.Point(6, 117)
         Me.lblpizza10.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblpizza10.Name = "lblpizza10"
-        Me.lblpizza10.Size = New System.Drawing.Size(112, 29)
+        Me.lblpizza10.Size = New System.Drawing.Size(78, 29)
         Me.lblpizza10.TabIndex = 25
-        Me.lblpizza10.Text = "Supreme"
+        Me.lblpizza10.Text = "Super"
         '
         'nmudpizza12
         '
