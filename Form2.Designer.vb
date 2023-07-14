@@ -22,72 +22,71 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
-        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
-        Me.btnback = New System.Windows.Forms.Button()
-        Me.btnprint = New System.Windows.Forms.Button()
-        Me.rtxreciept = New System.Windows.Forms.RichTextBox()
-        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
-        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
-        Me.SuspendLayout()
-        '
-        'PrintDocument1
-        '
-        '
-        'btnback
-        '
-        Me.btnback.BackColor = System.Drawing.Color.Tomato
-        Me.btnback.Location = New System.Drawing.Point(12, 438)
-        Me.btnback.Name = "btnback"
-        Me.btnback.Size = New System.Drawing.Size(271, 61)
-        Me.btnback.TabIndex = 12
-        Me.btnback.Text = "Go Back"
-        Me.btnback.UseVisualStyleBackColor = False
-        '
-        'btnprint
-        '
-        Me.btnprint.BackColor = System.Drawing.Color.ForestGreen
-        Me.btnprint.Location = New System.Drawing.Point(15, 505)
-        Me.btnprint.Name = "btnprint"
-        Me.btnprint.Size = New System.Drawing.Size(268, 51)
-        Me.btnprint.TabIndex = 21
-        Me.btnprint.Text = "Print"
-        Me.btnprint.UseVisualStyleBackColor = False
-        '
-        'rtxreciept
-        '
-        Me.rtxreciept.Location = New System.Drawing.Point(12, 9)
-        Me.rtxreciept.Name = "rtxreciept"
-        Me.rtxreciept.Size = New System.Drawing.Size(271, 423)
-        Me.rtxreciept.TabIndex = 24
-        Me.rtxreciept.Text = ""
-        '
-        'PrintDialog1
-        '
-        Me.PrintDialog1.UseEXDialog = True
-        '
-        'PrintPreviewDialog1
-        '
-        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
-        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
-        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
-        Me.PrintPreviewDialog1.Enabled = True
-        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
-        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
-        Me.PrintPreviewDialog1.Visible = False
-        '
-        'Form2
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(298, 568)
-        Me.Controls.Add(Me.rtxreciept)
-        Me.Controls.Add(Me.btnprint)
-        Me.Controls.Add(Me.btnback)
-        Me.Name = "Form2"
-        Me.Text = "Form2"
-        Me.ResumeLayout(False)
-
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form2))
+        PrintDocument1 = New Printing.PrintDocument()
+        btnback = New Button()
+        btnprint = New Button()
+        rtxreciept = New RichTextBox()
+        PrintDialog1 = New PrintDialog()
+        PrintPreviewDialog1 = New PrintPreviewDialog()
+        SuspendLayout()
+        ' 
+        ' PrintDocument1
+        ' 
+        ' 
+        ' btnback
+        ' 
+        btnback.BackColor = Color.Tomato
+        btnback.Location = New Point(12, 438)
+        btnback.Name = "btnback"
+        btnback.Size = New Size(271, 61)
+        btnback.TabIndex = 12
+        btnback.Text = "Go Back"
+        btnback.UseVisualStyleBackColor = False
+        ' 
+        ' btnprint
+        ' 
+        btnprint.BackColor = Color.ForestGreen
+        btnprint.Location = New Point(15, 505)
+        btnprint.Name = "btnprint"
+        btnprint.Size = New Size(268, 51)
+        btnprint.TabIndex = 21
+        btnprint.Text = "Print"
+        btnprint.UseVisualStyleBackColor = False
+        ' 
+        ' rtxreciept
+        ' 
+        rtxreciept.Location = New Point(12, 9)
+        rtxreciept.Name = "rtxreciept"
+        rtxreciept.Size = New Size(271, 423)
+        rtxreciept.TabIndex = 24
+        rtxreciept.Text = ""
+        ' 
+        ' PrintDialog1
+        ' 
+        PrintDialog1.UseEXDialog = True
+        ' 
+        ' PrintPreviewDialog1
+        ' 
+        PrintPreviewDialog1.AutoScrollMargin = New Size(0, 0)
+        PrintPreviewDialog1.AutoScrollMinSize = New Size(0, 0)
+        PrintPreviewDialog1.ClientSize = New Size(400, 300)
+        PrintPreviewDialog1.Enabled = True
+        PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), Icon)
+        PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        PrintPreviewDialog1.Visible = False
+        ' 
+        ' Form2
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(298, 568)
+        Controls.Add(rtxreciept)
+        Controls.Add(btnprint)
+        Controls.Add(btnback)
+        Name = "Form2"
+        Text = "Form2"
+        ResumeLayout(False)
     End Sub
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents btnback As Button

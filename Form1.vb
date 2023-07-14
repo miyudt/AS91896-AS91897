@@ -117,6 +117,11 @@
                 Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 13.5)) & vbCrLf
             End If
         Next
+        If chkdelivery.Checked = True Then
+            FinalCost += 3
+            Form2.rtxreciept.Text += "Delivery:" & vbTab & vbTab & vbTab & FormatCurrency(3) & vbCrLf
+        Else
+        End If
         Form2.rtxreciept.Text += "Total:" & vbTab & vbTab & vbTab & FormatCurrency(FinalCost) & vbCrLf
         Form2.rtxreciept.Text += "**************************************************" & vbCrLf & "Thanks for shopping with us ^^"
     End Sub
@@ -126,5 +131,9 @@
 
     Private Sub lblpizza10_Click(sender As Object, e As EventArgs) Handles lblpizza10.Click
 
+    End Sub
+
+    Private Sub btnreset_Click(sender As Object, e As EventArgs) Handles btnreset.Click
+        Application.Restart()
     End Sub
 End Class

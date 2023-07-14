@@ -22,80 +22,79 @@ Partial Class Form3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.txtNewPass = New System.Windows.Forms.TextBox()
-        Me.lblNewPass = New System.Windows.Forms.Label()
-        Me.lblConfirmPass = New System.Windows.Forms.Label()
-        Me.txtConfirmPass = New System.Windows.Forms.TextBox()
-        Me.btnSave = New System.Windows.Forms.Button()
-        Me.btnCancel = New System.Windows.Forms.Button()
-        Me.SuspendLayout()
-        '
-        'txtNewPass
-        '
-        Me.txtNewPass.Location = New System.Drawing.Point(12, 30)
-        Me.txtNewPass.Name = "txtNewPass"
-        Me.txtNewPass.Size = New System.Drawing.Size(222, 23)
-        Me.txtNewPass.TabIndex = 0
-        '
-        'lblNewPass
-        '
-        Me.lblNewPass.AutoSize = True
-        Me.lblNewPass.Location = New System.Drawing.Point(12, 9)
-        Me.lblNewPass.Name = "lblNewPass"
-        Me.lblNewPass.Size = New System.Drawing.Size(87, 15)
-        Me.lblNewPass.TabIndex = 1
-        Me.lblNewPass.Text = "New Password:"
-        '
-        'lblConfirmPass
-        '
-        Me.lblConfirmPass.AutoSize = True
-        Me.lblConfirmPass.Location = New System.Drawing.Point(12, 61)
-        Me.lblConfirmPass.Name = "lblConfirmPass"
-        Me.lblConfirmPass.Size = New System.Drawing.Size(107, 15)
-        Me.lblConfirmPass.TabIndex = 3
-        Me.lblConfirmPass.Text = "Confirm Password:"
-        '
-        'txtConfirmPass
-        '
-        Me.txtConfirmPass.Location = New System.Drawing.Point(12, 81)
-        Me.txtConfirmPass.Name = "txtConfirmPass"
-        Me.txtConfirmPass.Size = New System.Drawing.Size(222, 23)
-        Me.txtConfirmPass.TabIndex = 2
-        '
-        'btnSave
-        '
-        Me.btnSave.Location = New System.Drawing.Point(12, 111)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(107, 23)
-        Me.btnSave.TabIndex = 4
-        Me.btnSave.Text = "Save"
-        Me.btnSave.UseVisualStyleBackColor = True
-        '
-        'btnCancel
-        '
-        Me.btnCancel.Location = New System.Drawing.Point(127, 112)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(107, 23)
-        Me.btnCancel.TabIndex = 5
-        Me.btnCancel.Text = "Cancel"
-        Me.btnCancel.UseVisualStyleBackColor = True
-        '
-        'Form3
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(246, 146)
-        Me.Controls.Add(Me.btnCancel)
-        Me.Controls.Add(Me.btnSave)
-        Me.Controls.Add(Me.lblConfirmPass)
-        Me.Controls.Add(Me.txtConfirmPass)
-        Me.Controls.Add(Me.lblNewPass)
-        Me.Controls.Add(Me.txtNewPass)
-        Me.Name = "Form3"
-        Me.Text = "Form3"
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        txtNewPass = New TextBox()
+        lblNewPass = New Label()
+        lblConfirmPass = New Label()
+        txtConfirmPass = New TextBox()
+        btnSave = New Button()
+        btnCancel = New Button()
+        SuspendLayout()
+        ' 
+        ' txtNewPass
+        ' 
+        txtNewPass.Location = New Point(12, 30)
+        txtNewPass.Name = "txtNewPass"
+        txtNewPass.Size = New Size(222, 23)
+        txtNewPass.TabIndex = 0
+        ' 
+        ' lblNewPass
+        ' 
+        lblNewPass.AutoSize = True
+        lblNewPass.Location = New Point(12, 9)
+        lblNewPass.Name = "lblNewPass"
+        lblNewPass.Size = New Size(87, 15)
+        lblNewPass.TabIndex = 1
+        lblNewPass.Text = "New Password:"
+        ' 
+        ' lblConfirmPass
+        ' 
+        lblConfirmPass.AutoSize = True
+        lblConfirmPass.Location = New Point(12, 61)
+        lblConfirmPass.Name = "lblConfirmPass"
+        lblConfirmPass.Size = New Size(107, 15)
+        lblConfirmPass.TabIndex = 3
+        lblConfirmPass.Text = "Confirm Password:"
+        ' 
+        ' txtConfirmPass
+        ' 
+        txtConfirmPass.Location = New Point(12, 81)
+        txtConfirmPass.Name = "txtConfirmPass"
+        txtConfirmPass.Size = New Size(222, 23)
+        txtConfirmPass.TabIndex = 2
+        ' 
+        ' btnSave
+        ' 
+        btnSave.Location = New Point(12, 111)
+        btnSave.Name = "btnSave"
+        btnSave.Size = New Size(107, 23)
+        btnSave.TabIndex = 4
+        btnSave.Text = "Save"
+        btnSave.UseVisualStyleBackColor = True
+        ' 
+        ' btnCancel
+        ' 
+        btnCancel.Location = New Point(127, 112)
+        btnCancel.Name = "btnCancel"
+        btnCancel.Size = New Size(107, 23)
+        btnCancel.TabIndex = 5
+        btnCancel.Text = "Cancel"
+        btnCancel.UseVisualStyleBackColor = True
+        ' 
+        ' Form3
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(246, 146)
+        Controls.Add(btnCancel)
+        Controls.Add(btnSave)
+        Controls.Add(lblConfirmPass)
+        Controls.Add(txtConfirmPass)
+        Controls.Add(lblNewPass)
+        Controls.Add(txtNewPass)
+        Name = "Form3"
+        Text = "Form3"
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents txtNewPass As TextBox
