@@ -101,39 +101,34 @@
         Form2.rtxreciept.Text = "Rotorua Dream Pizza" & vbCrLf & "Call us at 0800 696 9696" & vbCrLf & "12 Amohau Road" & vbCrLf & "**************************************************" & vbCrLf & TrimmedName & vbCrLf & TrimmedPH & vbCrLf & TrimmedCredit & vbCrLf & TrimmedAddress & vbCrLf & "**************************************************" & vbCrLf
         For x = 0 To 6
             If PizzaOrder(0, x).Length < 8 Then
-                FinalCost += PizzaOrder(1, x) * 8.5
-                Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 8.5)) & vbCrLf
+                FinalCost += PizzaOrder(1, x) * 8.5 'adds to final cost
+                Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 8.5)) & vbCrLf 'prints values of pizzas such as cost and amount to reciept text
             Else
-                FinalCost += PizzaOrder(1, x) * 8.5
-                Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 8.5)) & vbCrLf
+                FinalCost += PizzaOrder(1, x) * 8.5 'adds to final cost
+                Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 8.5)) & vbCrLf 'prints values of pizzas such as cost and amount to reciept text
             End If
         Next
         For x = 7 To 11
             If PizzaOrder(0, x).Length < 8 Then
-                FinalCost += PizzaOrder(1, x) * 13.5
-                Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 13.5)) & vbCrLf
+                FinalCost += PizzaOrder(1, x) * 13.5 'adds to final cost
+                Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 13.5)) & vbCrLf 'prints values of pizzas such as cost and amount to reciept text
             Else
-                FinalCost += PizzaOrder(1, x) * 13.5
-                Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 13.5)) & vbCrLf
+                FinalCost += PizzaOrder(1, x) * 13.5 'adds to final cost
+                Form2.rtxreciept.Text += PizzaOrder(0, x) & vbTab & PizzaOrder(1, x) & vbTab & (FormatCurrency(PizzaOrder(1, x) * 13.5)) & vbCrLf 'prints values of pizzas such as cost and amount to reciept text
             End If
         Next
         If chkdelivery.Checked = True Then
-            FinalCost += 3
+            FinalCost += 3 'adds delivery cost
             Form2.rtxreciept.Text += "Delivery:" & vbTab & vbTab & vbTab & FormatCurrency(3) & vbCrLf
         Else
         End If
-        Form2.rtxreciept.Text += "Total:" & vbTab & vbTab & vbTab & FormatCurrency(FinalCost) & vbCrLf
+        Form2.rtxreciept.Text += "Total:" & vbTab & vbTab & vbTab & FormatCurrency(FinalCost) & vbCrLf 'calculates final cost
         Form2.rtxreciept.Text += "**************************************************" & vbCrLf & "Thanks for shopping with us ^^"
     End Sub
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
-        e.Graphics.DrawString(Form2.rtxreciept.Text, New Font("Arial", 12, FontStyle.Regular), Brushes.Black, 20, 20)
+        e.Graphics.DrawString(Form2.rtxreciept.Text, New Font("Arial", 12, FontStyle.Regular), Brushes.Black, 20, 20) 'code to print the reciept
     End Sub
-
-    Private Sub lblpizza10_Click(sender As Object, e As EventArgs) Handles lblpizza10.Click
-
-    End Sub
-
     Private Sub btnreset_Click(sender As Object, e As EventArgs) Handles btnreset.Click
-        Application.Restart()
+        Application.Restart() 'makes button function
     End Sub
 End Class
