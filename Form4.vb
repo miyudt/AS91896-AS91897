@@ -10,7 +10,7 @@
         Else
             Form1.Show()
             Me.Hide()
-            MessageBox.Show("The PASSWORD.txt file was removed from its directory or is corrupt, please replace immediately!") 'stops the program from crashing if no file is found
+            MessageBox.Show("The PASSWORD.txt file was removed from its directory or is corrupt, please replace immediately!" & vbCrLf & vbCrLf & "If this is a first time startup, please reference the following video (link can also be found on GItHub!) https://drive.google.com/file/d/1pOWsGH2Jw4ISlkdfv7bHdlsIiqUMuSih/view?usp=sharing") 'stops the program from crashing if no file is found
         End If
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnEnter.Click
